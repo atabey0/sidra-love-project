@@ -74,7 +74,7 @@ const LoveMessage: React.FC = () => {
         <blockquote className="text-2xl md:text-3xl font-bold text-white mb-4 italic">
           Birlikte geçirdiğimiz her an, bir yıldız kadar parlak ve değerli
         </blockquote>
-        <p className="text-2xl md:text-3xl font-bold text-white mb-4 italic">
+        <p className="text-5xl md:text-3xl font-bold text-white mb-4 italic">
           Umut & Sidra
           
         </p>
