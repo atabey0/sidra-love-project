@@ -1,4 +1,4 @@
-gimport React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Heart, Sparkles } from 'lucide-react';
 import LoveMessage from './LoveMessage';
 import Counter from './Counter';
