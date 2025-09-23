@@ -52,14 +52,14 @@ const Counter: React.FC = () => {
         <div className="flex items-center justify-center mb-4">
           <Calendar className="w-8 h-8 text-primary mr-3" />
           <h3 className="text-2xl md:text-3xl font-bold romantic-text">
-            Tanıştığımız Günlerimiz
+            İlk Tanıştığımız günden itibaren birlikte geçirdiğimiz süre
           </h3>
         </div>
         
         <div className="text-center">
           <div className="inline-block relative">
             <span className="text-6xl md:text-8xl font-bold counter-text animate-pulse-heart">
-              625
+              2215
             </span>
             <div className="absolute -top-2 -right-2">
               <Heart className="w-6 h-6 text-accent animate-floating-heart" fill="currentColor" />
@@ -76,7 +76,7 @@ const Counter: React.FC = () => {
         <div className="flex items-center justify-center mb-6">
           <Clock className="w-8 h-8 text-primary mr-3" />
           <h3 className="text-2xl md:text-3xl font-bold romantic-text">
-            Ciddi Olduğumuz Günler
+            İlişkimize Ciddi Adım Attığımız Süre
           </h3>
         </div>
         
