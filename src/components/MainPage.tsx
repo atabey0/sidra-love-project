@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+gimport React, { useEffect, useRef } from 'react';
 import { Heart, Sparkles } from 'lucide-react';
 import LoveMessage from './LoveMessage';
 import Counter from './Counter';
@@ -137,10 +137,10 @@ const MainPage: React.FC = () => {
             <div className="bg-card/60 backdrop-blur-lg rounded-3xl p-8 romantic-shadow max-w-2xl mx-auto">
               <Heart className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse-heart" fill="currentColor" />
               <h3 className="text-2xl font-bold romantic-text mb-4">
-                Beni Affet, Seni Çok Seviyorum
+                 Seni Çok Seviyorum
               </h3>
               <p className="text-muted-foreground text-lg">
-                Bu site, sana olan pişmanlığımın ve sonsuz aşkımın göstergesi... 💜
+                Bu site, sana olan sevgimin göstergesi...💜
               </p>
               <div className="flex justify-center space-x-2 mt-6">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
