@@ -57,7 +57,7 @@ const PhotoGallery: React.FC = () => {
           <Star className="w-8 h-8 text-primary ml-3 animate-sparkle" />
         </div>
         <p className="text-lg text-white">
-          Her fotoğraf, kalbimde ayrı bir yer... 📸💕
+          💡 Fotoğraflara tıklayarak özel mesajları görebilirsin 📸💕
         </p>
       </div>
 
@@ -127,10 +127,10 @@ const PhotoGallery: React.FC = () => {
       {/* Gallery Footer */}
       <div className="text-center mt-12 p-6 bg-card/50 backdrop-blur-lg rounded-3xl romantic-shadow">
         <p className="text-muted-foreground mb-2">
-          💡 <em>Fotoğraflara tıklayarak özel mesajları görebilirsin</em>
+           <em></em>
         </p>
         <p className="text-lg romantic-text font-semibold">
-          ✨ Her anımız, sonsuz aşkımızın birer tanığı ✨
+          ✨✨
         </p>
       </div>
     </div>
