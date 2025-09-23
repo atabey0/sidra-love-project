@@ -81,7 +81,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
 
           {/* Romantic Message */}
           <h1 className="text-3xl md:text-4xl font-bold romantic-text mb-4 animate-love-bounce">
-            Kalbimin Tek Sahibesi
+            Kalbimin Tek Sahibi
           </h1>
           
           <p className="text-lg text-muted-foreground mb-2">
@@ -97,7 +97,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-4">
             <label className="text-sm font-medium text-foreground block">
-              Kalbine Açılan Kapının Şifresi 💝
+              Kalbime Açılan Kapının Şifresi 💝
             </label>
             
             <div className="relative">
@@ -147,7 +147,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
 
         {/* Footer Message */}
         <div className="text-center mt-6 text-sm text-muted-foreground">
-          <p>💖 Seni seviyorum, canım benim 💖</p>
+      
         </div>
       </div>
     </div>
