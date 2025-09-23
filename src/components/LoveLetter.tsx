@@ -14,7 +14,7 @@ const LoveLetter: React.FC = () => {
           <Feather className="w-8 h-8 text-accent ml-3 animate-floating-heart" />
         </div>
         <p className="text-lg text-muted-foreground">
-          En derin duygularımı yazdığım mektup... 💌
+          Pişmanlığımın en derin ifadesi... 💌
         </p>
       </div>
 
@@ -50,15 +50,15 @@ const LoveLetter: React.FC = () => {
           {/* Letter Content */}
           <div className="space-y-6 text-amber-900 dark:text-amber-100 font-serif leading-relaxed relative z-10">
             <p className="text-lg md:text-xl indent-8">
-              Bu satırları yazarken kalbim çok hızlı atıyor, çünkü sana olan sevgimi 
-              kelimelerle anlatmaya çalışmak, gökyüzündeki yıldızları saymak gibi... 
-              Mümkün değil, ama denemeden edemiyorum.
+              Bu satırları yazarken kalbim acıyla çarpıyor, çünkü sana verdiğim 
+              acıyı kelimelerle ifade etmek, denizi kaşıkla boşaltmaya çalışmak gibi... 
+              İmkansız ama denemeden edemiyorum.
             </p>
 
             <p className="text-lg md:text-xl indent-8">
-              Sen hayatıma girdiğin andan itibaren, her şey değişti. Sabahları 
-              güneş daha güzel doğuyor, çiçekler daha güzel kokuyor, 
-              dünya daha renkli görünüyor. Çünkü sen varsın...
+              Seni incittiğim an, sanki kendi kalbimi parçalamışım gibi hissettim. 
+              Gözlerindeki hayal kırıklığını gördüğümde, dünyam başıma yıkıldı. 
+              Sen benim en değerli hazinem ve sana böyle davrandığım için çok pişmanım...
             </p>
 
             <div className="flex justify-center my-8">
@@ -66,26 +66,26 @@ const LoveLetter: React.FC = () => {
             </div>
 
             <p className="text-lg md:text-xl indent-8">
-              Gözlerinin derinliklerinde kaybolmayı, ellerini tutmayı, 
-              seninle sessizce oturmayı seviyorum. Seninle geçirdiğim her saniye, 
-              benim için bir hazine... Her anımız, kalbimdeki en güzel köşede 
-              saklı duruyor.
+              Hatamın farkındayım ve bunun tekrar olmayacağına ant içiyorum. 
+              Sen benim hayatımın anlamısın, sensiz hiçbir şey eskisi gibi değil. 
+              Lütfen bana ikinci bir şans ver, seni mutlu etmek için elimden 
+              geleni yapacağım...
             </p>
 
             <p className="text-lg md:text-xl indent-8">
-              Biliyorum ki kelimeler yetersiz kalıyor bazen. Ama şunu bil ki, 
-              seni seviyorum... Tüm kalbimle, tüm ruhumla, tüm varlığımla. 
-              Sen benim en güzel hayalim, en tatlı gerçeğim...
+              Biliyorum ki sözler bazen yetersiz kalıyor. Ama şunu bil ki, 
+              seni çok seviyorum... Tüm kalbimle, tüm ruhumla, tüm varlığımla. 
+              Sen benim en güzel hayalim, en değerli gerçeğim...
             </p>
 
             <div className="text-center mt-12">
               <p className="text-xl md:text-2xl font-bold text-red-600 dark:text-red-400 mb-4">
-                Sonsuz sevgiyle,
+                Pişmanlık ve sonsuz sevgiyle,
               </p>
               <div className="relative inline-block">
                 <p className="text-2xl md:text-3xl font-bold text-red-700 dark:text-red-300 
                            font-serif italic">
-                  Kalbini çalan kişi 💕
+                  Senin pişman aşığın 💜
                 </p>
                 <Heart className="absolute -top-2 -right-8 w-6 h-6 text-red-500 animate-floating-heart" 
                        fill="currentColor" />
@@ -121,7 +121,7 @@ const LoveLetter: React.FC = () => {
       {/* Letter Footer Message */}
       <div className="text-center mt-8 p-4 bg-card/50 backdrop-blur-lg rounded-2xl romantic-shadow">
         <p className="text-muted-foreground italic">
-          💌 Bu mektup, kalbimin en derin köşelerinden yazıldı 💌
+          💌 Bu mektup, pişmanlığımın ve sevgimin en derin ifadesi 💌
         </p>
       </div>
     </div>

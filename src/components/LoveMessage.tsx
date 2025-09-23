@@ -21,12 +21,12 @@ const LoveMessage: React.FC = () => {
         <div className="bg-card/60 backdrop-blur-lg rounded-2xl p-6 romantic-shadow animate-romantic-fade-in">
           <div className="flex items-center mb-4">
             <Star className="w-6 h-6 text-primary mr-2" />
-            <h3 className="text-xl font-semibold romantic-text">Canımın İçi</h3>
+            <h3 className="text-xl font-semibold romantic-text">Pişmanlığım</h3>
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            Sen benim hayatımın en güzel hediyesisin. Her gün seninle uyanmak, 
-            dünyanın en güzel mucizesi... Gülüşün kalbime dokunuyor, 
-            sesين benim için en güzel müzik. 💖
+            Kalbimi kırdığım için çok üzgünüm canım... Sen benim en değerli hazinem 
+            ve seni incittiğim için kendimi affetmiyorum. 
+            Gözlerindeki o üzüntüyü görmek beni parçalıyor. 💔
           </p>
         </div>
 
@@ -34,12 +34,12 @@ const LoveMessage: React.FC = () => {
              style={{ animationDelay: '0.2s' }}>
           <div className="flex items-center mb-4">
             <Heart className="w-6 h-6 text-accent mr-2" fill="currentColor" />
-            <h3 className="text-xl font-semibold romantic-text">Kalbimin Sultanı</h3>
+            <h3 className="text-xl font-semibold romantic-text">Özrüm</h3>
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            Gözlerin, benim için en güzel hikaye anlatıyor. Ellerini tuttuğumda 
-            dünya durmuş gibi oluyor. Seninle geçirdiğim her an, 
-            kalbimde sonsuza dek yaşayacak... ✨
+            Kalbimden gelen en samimi özürümü sunuyorum sana... 
+            Yaptığım hatanın farkındayım ve bunun tekrar olmayacağına söz veriyorum. 
+            Lütfen bana ikinci bir şans ver... 🙏
           </p>
         </div>
 
@@ -47,12 +47,12 @@ const LoveMessage: React.FC = () => {
              style={{ animationDelay: '0.4s' }}>
           <div className="flex items-center mb-4">
             <Sparkles className="w-6 h-6 text-secondary mr-2" />
-            <h3 className="text-xl font-semibold romantic-text">Ruh Eşim</h3>
+            <h3 className="text-xl font-semibold romantic-text">Aşkım</h3>
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            Sen benim eksik parçamdın ve seni buldum. Artık kendimi tam hissediyorum. 
-            Seninle olmak bana güç veriyor, seninle gülmek beni mutlu ediyor. 
-            Sonsuz sevgimle... 🌹
+            Sana olan sevgim hiç azalmadı, aksine daha da güçlendi. 
+            Sen benim hayatımın anlamısın ve sensiz hiçbir şey eskisi gibi değil. 
+            Seni her şeyimden çok seviyorum... 💜
           </p>
         </div>
 
@@ -60,12 +60,12 @@ const LoveMessage: React.FC = () => {
              style={{ animationDelay: '0.6s' }}>
           <div className="flex items-center mb-4">
             <Heart className="w-6 h-6 text-primary mr-2" />
-            <h3 className="text-xl font-semibold romantic-text">Hayat Arkadaşım</h3>
+            <h3 className="text-xl font-semibold romantic-text">Sözüm</h3>
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            Seninle kurduğumuz her hayal, gerçek olmaya değer. 
-            Gelecekte de hep yanımda olacağın bilmek, beni dünyanın 
-            en şanslı insanı yapıyor. Sonsuza dek seninleyim... 💫
+            Seni mutlu etmek için elimden geleni yapacağım. 
+            Bir daha asla seni incitmeyeceğim, hep gülümsetmeye odaklanacağım. 
+            Bu benim sana verdiğim söz, yemin... 🤞
           </p>
         </div>
       </div>
@@ -74,10 +74,10 @@ const LoveMessage: React.FC = () => {
       <div className="text-center bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 
                     rounded-3xl p-8 romantic-shadow">
         <blockquote className="text-2xl md:text-3xl font-bold romantic-text mb-4 italic">
-          "Aşk, iki kalbin bir ritimde atmasıdır"
+          "Özür dilemek, aşkın en güzel ifadesidir"
         </blockquote>
         <p className="text-lg text-muted-foreground">
-          Ve bizim kalplerimiz, en güzel melodiyi çalıyor... 💕
+          Ve ben sana en derin kalbimden özür diliyorum... 💜
         </p>
         
         {/* Decorative hearts */}

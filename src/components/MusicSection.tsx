@@ -6,13 +6,25 @@ const MusicSection: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
+  // Auto-play when component mounts
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      if (audioRef.current) {
+        audioRef.current.play().catch(console.error);
+        setIsPlaying(true);
+      }
+    }, 1000); // Delay to ensure user interaction
+
+    return () => clearTimeout(timer);
+  }, []);
+
   // YouTube link'i ses dosyası olarak kullanamayacağımız için sample audio kullanıyoruz
   const songData = {
-    title: "Bizim Şarkımız 💕",
-    artist: "Aşkımızın Melodisi",
+    title: "Özür Şarkımız 💜",
+    artist: "Kalbimdeki Pişmanlık",
     // Bu kısma sonra gerçek şarkı linkini ekleyeceksin
     audioUrl: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav", // Placeholder
-    youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" // Buraya gerçek linki koyacaksın
+    youtubeUrl: "https://www.youtube.com/watch?v=xUAxFtJ6uUA&list=RDxUAxFtJ6uUA&start_radio=1"
   };
 
   const togglePlay = () => {
@@ -42,7 +54,7 @@ const MusicSection: React.FC = () => {
           <Music className="w-8 h-8 text-primary ml-3 animate-pulse-heart" />
         </div>
         <p className="text-lg text-muted-foreground">
-          Bu şarkıyı her duyduğumda seni hatırlıyorum... 🎵
+          Bu şarkı kalbimden çıkan özrümün melodisi... 🎵
         </p>
       </div>
 
@@ -134,7 +146,7 @@ const MusicSection: React.FC = () => {
             {/* Romantic Message */}
             <div className="bg-secondary/20 rounded-2xl p-4 mt-6">
               <p className="text-muted-foreground text-center md:text-left italic">
-                "Bu şarkı, kalbimizin ritmi... Her notası, sana olan sevgimle yankılanıyor 💕"
+                "Bu şarkı, pişmanlığımın melodisi... Her notası, sana olan özrümle yankılanıyor 💜"
               </p>
             </div>
           </div>
