@@ -25,8 +25,8 @@ const MusicSection: React.FC = () => {
 
   // Özür şarkısı verisi
    const songData = {
-     title: "Özür Şarkımız 💜",
-     artist: "Kalbimdeki Pişmanlık",
+     title: "Ali Kınık",
+     artist: "Seni Severken Çocuk Gibiyim",
      audioUrl: "https://files.catbox.moe/iqufbl.mp3", // Butona basınca çalan şarkı
      youtubeUrl: "https://www.youtube.com/watch?v=4-vPgQjy1q8&list=RD4-vPgQjy1q8&start_radio=1"
    };
@@ -81,12 +81,12 @@ const MusicSection: React.FC = () => {
         <div className="flex items-center justify-center mb-4">
           <Music className="w-8 h-8 text-primary mr-3 animate-pulse-heart" />
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Özür Şarkımız
+            Bu Şarkı Senin İçin
           </h2>
           <Music className="w-8 h-8 text-primary ml-3 animate-pulse-heart" />
         </div>
         <p className="text-lg text-white">
-          Bu şarkı kalbimden çıkan özrümün melodisi... 🎵
+          Bu şarkıyı dinlerken bizi buluyorum... 🎵
         </p>
       </div>
 
@@ -177,7 +177,7 @@ const MusicSection: React.FC = () => {
             {/* Romantic Message */}
             <div className="bg-secondary/20 rounded-2xl p-4 mt-6">
               <p className="text-muted-foreground text-center md:text-left italic">
-                "Bu şarkı, pişmanlığımın melodisi... Her notası, sana olan özrümle yankılanıyor 💜"
+                "Ben kumdan bir kale yaptım ki bize, Kimse dokunmasın bu sevgimize, Bu masalı gören olmasın diye..."
               </p>
             </div>
           </div>
