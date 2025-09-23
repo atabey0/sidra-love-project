@@ -12,7 +12,7 @@ const PhotoGallery: React.FC = () => {
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://files.catbox.moe/mcot18.png",
       message: "Seninle geçirdiğim her an, hayatımın en güzel anıları 🌹"
     },
     {
