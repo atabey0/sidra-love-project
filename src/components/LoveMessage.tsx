@@ -6,7 +6,7 @@ const LoveMessage: React.FC = () => {
     <div className="w-full max-w-4xl mx-auto">
       {/* Section Header */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl md:text-6xl font-bold romantic-text mb-6 animate-love-bounce">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-love-bounce">
           Seni Seviyorum
         </h1>
         <div className="flex items-center justify-center space-x-2 mb-8">
@@ -73,10 +73,10 @@ const LoveMessage: React.FC = () => {
       {/* Central Love Quote */}
       <div className="text-center bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 
                     rounded-3xl p-8 romantic-shadow">
-        <blockquote className="text-2xl md:text-3xl font-bold romantic-text mb-4 italic">
+        <blockquote className="text-2xl md:text-3xl font-bold text-white mb-4 italic">
           "Özür dilemek, aşkın en güzel ifadesidir"
         </blockquote>
-        <p className="text-lg text-muted-foreground">
+        <p className="text-lg text-white">
           Ve ben sana en derin kalbimden özür diliyorum... 💜
         </p>
         

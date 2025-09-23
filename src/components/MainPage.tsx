@@ -62,14 +62,14 @@ const MainPage: React.FC = () => {
             <div className="mb-12">
               <div className="flex items-center justify-center mb-6">
                 <Sparkles className="w-12 h-12 text-accent animate-sparkle mr-4" />
-                <h1 className="text-5xl md:text-7xl font-bold romantic-text animate-love-bounce">
+                <h1 className="text-5xl md:text-7xl font-bold text-white animate-love-bounce">
                   Sidra'ya Özel
                 </h1>
                 <Sparkles className="w-12 h-12 text-accent animate-sparkle ml-4" />
               </div>
               
               {/* Subtitle */}
-              <p className="text-2xl md:text-3xl text-muted-foreground mb-8">
+              <p className="text-2xl md:text-3xl text-white mb-8">
                 Kalbimin en derin köşelerinden... 💕
               </p>
               
@@ -86,7 +86,7 @@ const MainPage: React.FC = () => {
               <div className="w-6 h-10 border-2 border-primary/60 rounded-full flex justify-center">
                 <div className="w-1 h-3 bg-primary/60 rounded-full mt-2 animate-pulse" />
               </div>
-              <p className="text-sm text-muted-foreground mt-2">Aşağı kaydır</p>
+              <p className="text-sm text-white mt-2">Aşağı kaydır</p>
             </div>
           </div>
         </section>

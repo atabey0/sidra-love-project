@@ -51,12 +51,12 @@ const PhotoGallery: React.FC = () => {
       <div className="text-center mb-12">
         <div className="flex items-center justify-center mb-4">
           <Star className="w-8 h-8 text-primary mr-3 animate-sparkle" />
-          <h2 className="text-3xl md:text-4xl font-bold romantic-text">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
             Güzel Anılarımız
           </h2>
           <Star className="w-8 h-8 text-primary ml-3 animate-sparkle" />
         </div>
-        <p className="text-lg text-muted-foreground">
+        <p className="text-lg text-white">
           Her fotoğraf, kalbimde ayrı bir yer... 📸💕
         </p>
       </div>

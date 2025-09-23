@@ -48,12 +48,12 @@ const MusicSection: React.FC = () => {
       <div className="text-center mb-8">
         <div className="flex items-center justify-center mb-4">
           <Music className="w-8 h-8 text-primary mr-3 animate-pulse-heart" />
-          <h2 className="text-3xl md:text-4xl font-bold romantic-text">
-            Bizim Şarkımız
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
+            Özür Şarkımız
           </h2>
           <Music className="w-8 h-8 text-primary ml-3 animate-pulse-heart" />
         </div>
-        <p className="text-lg text-muted-foreground">
+        <p className="text-lg text-white">
           Bu şarkı kalbimden çıkan özrümün melodisi... 🎵
         </p>
       </div>

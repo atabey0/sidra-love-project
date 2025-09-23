@@ -8,12 +8,12 @@ const LoveLetter: React.FC = () => {
       <div className="text-center mb-8">
         <div className="flex items-center justify-center mb-4">
           <Scroll className="w-8 h-8 text-primary mr-3 animate-pulse" />
-          <h2 className="text-3xl md:text-4xl font-bold romantic-text">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
             Kalbimden Sana
           </h2>
           <Feather className="w-8 h-8 text-accent ml-3 animate-floating-heart" />
         </div>
-        <p className="text-lg text-muted-foreground">
+        <p className="text-lg text-white">
           Pişmanlığımın en derin ifadesi... 💌
         </p>
       </div>
