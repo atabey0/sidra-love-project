@@ -20,7 +20,7 @@ const MusicSection: React.FC = () => {
 
   // YouTube link'i ses dosyası olarak kullanamayacağımız için sample audio kullanıyoruz
   const songData = {
-    title: "Özür Şarkımız 💜",
+    title: "Özür Şarkım💜",
     artist: "Kalbimdeki Pişmanlık",
     // Bu kısma sonra gerçek şarkı linkini ekleyeceksin
     audioUrl: "https://files.catbox.moe/05rllq.mp3", // Placeholder
