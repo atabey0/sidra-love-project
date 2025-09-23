@@ -7,7 +7,7 @@ const PhotoGallery: React.FC = () => {
   const photos = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://files.catbox.moe/kexsc7.jpeg",
       message: "İlk karşılaştığımız an, kalbim sana ait olduğunu anladı... 💖"
     },
     {
