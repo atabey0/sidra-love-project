@@ -23,7 +23,7 @@ const MusicSection: React.FC = () => {
     title: "Özür Şarkımız 💜",
     artist: "Kalbimdeki Pişmanlık",
     // Bu kısma sonra gerçek şarkı linkini ekleyeceksin
-    audioUrl: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav", // Placeholder
+    audioUrl: "https://files.catbox.moe/05rllq.mp3", // Placeholder
     youtubeUrl: "https://www.youtube.com/watch?v=xUAxFtJ6uUA&list=RDxUAxFtJ6uUA&start_radio=1"
   };
 
