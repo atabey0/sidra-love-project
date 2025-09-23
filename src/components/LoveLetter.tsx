@@ -56,9 +56,7 @@ Son zamanlarda yaşadığımız tartışmaları düşündüm ve sanırım bazı 
             </p>
 
             <p className="text-lg md:text-xl indent-8">
-              Seni incittiğim an, sanki kendi kalbimi parçalamışım gibi hissettim. 
-              Gözlerindeki hayal kırıklığını gördüğümde, dünyam başıma yıkıldı. 
-              Sen benim en değerli hazinem ve sana böyle davrandığım için çok pişmanım...
+              Biliyorum ki sadece “özür dilerim” demek yetmez. Ama içtenlikle, bu hale geldiğimiz için kendime de çok kızgınım. O anlarda daha dikkatli olmalıydım; seni dinlemeli ve anlamalıydım. Keşke o anları geri alabilsem ama yapamıyorum. Tek yapabileceğim, bu hatayı bir daha tekrarlamamak için çabalamak.
             </p>
 
             <div className="flex justify-center my-8">
@@ -66,26 +64,21 @@ Son zamanlarda yaşadığımız tartışmaları düşündüm ve sanırım bazı 
             </div>
 
             <p className="text-lg md:text-xl indent-8">
-              Hatamın farkındayım ve bunun tekrar olmayacağına ant içiyorum. 
-              Sen benim hayatımın anlamısın, sensiz hiçbir şey eskisi gibi değil. 
-              Lütfen bana ikinci bir şans ver, seni mutlu etmek için elimden 
-              geleni yapacağım...
+              Ve sana bir şey söylemek istiyorum: Bana karşı hissettiğim sevgi hiç değişmedi. Evlilik hayalleri kurduğumuz günleri, seni hayatımın merkezine koyduğum o düşünceleri hiç unutmadım. Bu yaşadıklarımız, beni sana daha sıkı sarılmaya ve bu ilişkiye daha çok sahip çıkmaya itti.
             </p>
 
             <p className="text-lg md:text-xl indent-8">
-              Biliyorum ki sözler bazen yetersiz kalıyor. Ama şunu bil ki, 
-              seni çok seviyorum... Tüm kalbimle, tüm ruhumla, tüm varlığımla. 
-              Sen benim en güzel hayalim, en değerli gerçeğim...
+              Senden istediğim tek şey, bu ilişkiyi yeniden inşa etmek için bana bir şans vermen. Sana bu kez sadece kelimelerle değil, davranışlarımla güven vereceğime söz veriyorum. O kırık yerleri birlikte onarmak, aramızdaki mesafeyi birlikte kapatmak için konuşmaya, çaba harcamaya ve ilişkimizi düzeltmeye, birbirimize sahip çıkmaya var mısın?
             </p>
 
             <div className="text-center mt-12">
               <p className="text-xl md:text-2xl font-bold text-red-600 dark:text-red-400 mb-4">
-                Pişmanlık ve sonsuz sevgiyle,
+             
               </p>
               <div className="relative inline-block">
                 <p className="text-2xl md:text-3xl font-bold text-red-700 dark:text-red-300 
                            font-serif italic">
-                  Senin pişman aşığın 💜
+                
                 </p>
                 <Heart className="absolute -top-2 -right-8 w-6 h-6 text-red-500 animate-floating-heart" 
                        fill="currentColor" />
@@ -121,7 +114,7 @@ Son zamanlarda yaşadığımız tartışmaları düşündüm ve sanırım bazı 
       {/* Letter Footer Message */}
       <div className="text-center mt-8 p-4 bg-card/50 backdrop-blur-lg rounded-2xl romantic-shadow">
         <p className="text-muted-foreground italic">
-          💌 Bu mektup, pişmanlığımın ve sevgimin en derin ifadesi 💌
+          💌 💌
         </p>
       </div>
     </div>
