@@ -70,7 +70,7 @@ const MainPage: React.FC = () => {
               
               {/* Subtitle */}
               <p className="text-2xl md:text-3xl text-white mb-8">
-                Kalbimin en derin köşelerinden... 💕
+                Senin için hazırladığım özel siteye hoşgeldin 💕
               </p>
               
               {/* Decorative Hearts */}
