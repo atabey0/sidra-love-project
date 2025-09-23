@@ -3,9 +3,9 @@ import { Calendar, Heart, Clock } from 'lucide-react';
 
 const Counter: React.FC = () => {
   const [liveTime, setLiveTime] = useState({
-    days: 751,
-    hours: 15,
-    minutes: 34,
+    days: 281,
+    hours: 1,
+    minutes: 54,
     seconds: 12
   });
 
