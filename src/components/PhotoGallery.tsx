@@ -17,22 +17,22 @@ const PhotoGallery: React.FC = () => {
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://files.catbox.moe/uvqu36.png",
       message: "Gülüşün, benim için dünyadaki en güzel müzik 🎵"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://files.catbox.moe/eojlqu.png",
       message: "Seni sevmek, nefes almak kadar doğal geldi bana ✨"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://files.catbox.moe/q8hxfg.png",
       message: "Bu fotoğrafa her baktığımda, o günkü mutluluğu yeniden yaşıyorum 💫"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1514315384763-ba401779410f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://files.catbox.moe/p6n35c.png",
       message: "Seninle olmak, cennetin dünyada bir parçası gibi 🕊️"
     }
   ];
