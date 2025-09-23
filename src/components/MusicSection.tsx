@@ -2,39 +2,60 @@ import React, { useState, useRef } from 'react';
 import { Play, Pause, Music, Heart, Volume2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const MusicSection: React.FC = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef<HTMLAudioElement>(null);
 
-  // Auto-play when component mounts
+const MusicSection: React.FC = () => {
+  // Arka plan şarkısı (siteye girince çalan)
+  const [isBgPlaying, setIsBgPlaying] = useState(false);
+  const bgAudioRef = useRef<HTMLAudioElement>(null);
+
+  // Özür şarkısı (butona basınca çalan)
+  const [isApologyPlaying, setIsApologyPlaying] = useState(false);
+  const apologyAudioRef = useRef<HTMLAudioElement>(null);
+
+  // Arka plan şarkısı otomatik başlasın
   React.useEffect(() => {
     const timer = setTimeout(() => {
-      if (audioRef.current) {
-        audioRef.current.play().catch(console.error);
-        setIsPlaying(true);
+      if (bgAudioRef.current) {
+        bgAudioRef.current.play().catch(() => {});
+        setIsBgPlaying(true);
       }
-    }, 1000); // Delay to ensure user interaction
-
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
-  // YouTube link'i ses dosyası olarak kullanamayacağımız için sample audio kullanıyoruz
-  const songData = {
-    title: "Özür Şarkım💜",
-    artist: "Kalbimdeki Pişmanlık",
-    // Bu kısma sonra gerçek şarkı linkini ekleyeceksin
-    audioUrl: "https://files.catbox.moe/05rllq.mp3", // Placeholder
-    youtubeUrl: "https://www.youtube.com/watch?v=xUAxFtJ6uUA&list=RDxUAxFtJ6uUA&start_radio=1"
+  // Özür şarkısı verisi
+   const songData = {
+     title: "Özür Şarkımız 💜",
+     artist: "Kalbimdeki Pişmanlık",
+     audioUrl: "https://files.catbox.moe/iqufbl.mp3", // Butona basınca çalan şarkı
+     youtubeUrl: "https://www.youtube.com/watch?v=4-vPgQjy1q8&list=RD4-vPgQjy1q8&start_radio=1"
+   };
+
+  // Özür şarkısı butonuna basınca
+  const handleApologyPlay = () => {
+    // Arka plan şarkısını durdur
+    if (bgAudioRef.current) {
+      bgAudioRef.current.pause();
+      // bgAudioRef.current.currentTime = 0; // Kaldırıldı, şarkı başa sarmayacak
+      setIsBgPlaying(false);
+    }
+    // Özür şarkısını başlat
+    if (apologyAudioRef.current) {
+      apologyAudioRef.current.play().catch(() => {});
+      setIsApologyPlaying(true);
+    }
   };
 
-  const togglePlay = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play().catch(console.error);
-      }
-      setIsPlaying(!isPlaying);
+  // Özür şarkısını durdurma butonu
+  const handleApologyPause = () => {
+    if (apologyAudioRef.current) {
+      apologyAudioRef.current.pause();
+      setIsApologyPlaying(false);
+    }
+    // Özür şarkısı durunca arka plan şarkısı kaldığı yerden devam etsin
+    if (bgAudioRef.current) {
+      bgAudioRef.current.play().catch(() => {});
+      setIsBgPlaying(true);
     }
   };
 
@@ -44,6 +65,17 @@ const MusicSection: React.FC = () => {
 
   return (
     <div className="w-full max-w-4xl mx-auto">
+      {/* Arka plan şarkısı (siteye girince otomatik çalacak, görünmez) */}
+      <audio
+        ref={bgAudioRef}
+         src="https://files.catbox.moe/05rllq.mp3" // Arka plan şarkısı
+        style={{ display: 'none' }}
+        onEnded={() => setIsBgPlaying(false)}
+        onPause={() => setIsBgPlaying(false)}
+        onPlay={() => setIsBgPlaying(true)}
+        loop
+      />
+
       {/* Section Header */}
       <div className="text-center mb-8">
         <div className="flex items-center justify-center mb-4">
@@ -61,7 +93,6 @@ const MusicSection: React.FC = () => {
       {/* Music Player Card */}
       <div className="bg-card/80 backdrop-blur-lg rounded-3xl p-8 romantic-shadow">
         <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
-          
           {/* Album Cover / Artwork */}
           <div className="relative">
             <div className="w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-primary via-accent to-secondary 
@@ -69,17 +100,16 @@ const MusicSection: React.FC = () => {
                           transition-transform duration-500 hover:scale-105">
               <div className="relative">
                 <Heart 
-                  className={`w-16 h-16 md:w-20 md:h-20 text-white ${isPlaying ? 'animate-pulse-heart' : ''}`}
+                  className={`w-16 h-16 md:w-20 md:h-20 text-white ${isApologyPlaying ? 'animate-pulse-heart' : ''}`}
                   fill="currentColor"
                 />
-                {isPlaying && (
+                {isApologyPlaying && (
                   <div className="absolute -inset-4 border-2 border-white/30 rounded-full animate-ping" />
                 )}
               </div>
             </div>
-            
             {/* Floating musical notes */}
-            {isPlaying && (
+            {isApologyPlaying && (
               <div className="absolute -top-2 -right-2">
                 <div className="text-2xl animate-love-bounce">🎵</div>
               </div>
@@ -97,12 +127,12 @@ const MusicSection: React.FC = () => {
               </p>
             </div>
 
-            {/* Audio Element */}
+            {/* Özür Şarkısı Audio Element */}
             <audio
-              ref={audioRef}
-              onEnded={() => setIsPlaying(false)}
-              onPlay={() => setIsPlaying(true)}
-              onPause={() => setIsPlaying(false)}
+              ref={apologyAudioRef}
+              onEnded={() => setIsApologyPlaying(false)}
+              onPlay={() => setIsApologyPlaying(true)}
+              onPause={() => setIsApologyPlaying(false)}
             >
               <source src={songData.audioUrl} type="audio/mpeg" />
               Tarayıcınız ses dosyasını desteklemiyor.
@@ -111,25 +141,26 @@ const MusicSection: React.FC = () => {
             {/* Control Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start 
                           space-y-4 sm:space-y-0 sm:space-x-4">
-              
-              {/* Play/Pause Button */}
-              <Button
-                onClick={togglePlay}
-                className="romantic-button flex items-center space-x-2 min-w-[140px]"
-              >
-                {isPlaying ? (
-                  <>
-                    <Pause className="w-5 h-5" />
-                    <span>Durdur</span>
-                  </>
-                ) : (
-                  <>
-                    <Play className="w-5 h-5" />
-                    <span>Çal</span>
-                  </>
-                )}
-                <Volume2 className="w-4 h-4 ml-1" />
-              </Button>
+              {/* Play/Pause Button (Özür Şarkısı) */}
+              {isApologyPlaying ? (
+                <Button
+                  onClick={handleApologyPause}
+                  className="romantic-button flex items-center space-x-2 min-w-[140px]"
+                >
+                  <Pause className="w-5 h-5" />
+                  <span>Durdur</span>
+                  <Volume2 className="w-4 h-4 ml-1" />
+                </Button>
+              ) : (
+                <Button
+                  onClick={handleApologyPlay}
+                  className="romantic-button flex items-center space-x-2 min-w-[140px]"
+                >
+                  <Play className="w-5 h-5" />
+                  <span>Çal</span>
+                  <Volume2 className="w-4 h-4 ml-1" />
+                </Button>
+              )}
 
               {/* YouTube Button */}
               <Button
