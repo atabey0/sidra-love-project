@@ -14,7 +14,7 @@ const LoveLetter: React.FC = () => {
           <Feather className="w-8 h-8 text-accent ml-3 animate-floating-heart" />
         </div>
         <p className="text-lg text-white">
-          Pişmanlığımın en derin ifadesi... 💌
+          
         </p>
       </div>
 
@@ -41,7 +41,7 @@ const LoveLetter: React.FC = () => {
             <div className="inline-block">
               <h3 className="text-2xl md:text-3xl font-bold text-amber-800 dark:text-amber-200 mb-2
                            font-serif italic">
-                Sevgili Sidra,
+                Sidom,
               </h3>
               <div className="w-32 h-px bg-amber-400 mx-auto" />
             </div>
@@ -50,9 +50,9 @@ const LoveLetter: React.FC = () => {
           {/* Letter Content */}
           <div className="space-y-6 text-amber-900 dark:text-amber-100 font-serif leading-relaxed relative z-10">
             <p className="text-lg md:text-xl indent-8">
-              Bu satırları yazarken kalbim acıyla çarpıyor, çünkü sana verdiğim 
-              acıyı kelimelerle ifade etmek, denizi kaşıkla boşaltmaya çalışmak gibi... 
-              İmkansız ama denemeden edemiyorum.
+              Seninle biraz konuşmak istedim. Son zamanlarda aramızdaki bu sessizlik ve mesafe beni çok üzüyor. Çünkü o eski, senli benli halimizi, seninle her şeyi rahatça konuşabildiğimiz günleri çok özledim.
+
+Son zamanlarda yaşadığımız tartışmaları düşündüm ve sanırım bazı şeylerin farkına vardım. Seni incittiğimin; söylediğim veya yaptığım bazı şeylerin seni benden uzaklaştırdığının farkındayım. Bu durumun ne kadar yıpratıcı olduğunu şimdi çok daha iyi anlıyorum. Seni kırdığım için, o kırık yerleri açtığım için gerçekten çok üzgünüm.
             </p>
 
             <p className="text-lg md:text-xl indent-8">
